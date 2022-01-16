@@ -72,20 +72,12 @@ class Solution{
         {
              ar2[0]=arr[j];
         }
-        else
-        {
-            int x=0;
-            if(n%2!=0){
-                 x=n-1;
-                 ar2[x]=arr[(n/2)];}
-            else
-                 x=n;
-        for(int i=0;i<x;i=i+2)
+        for(int i=0;i<n;i=i+2)
         {
             ar2[i]=arr[j];
+            if(i+1<n)
             ar2[i+1]=arr[n-j-1];
             j++;
-        }
         }
         for(int i=0;i<n;i++)
         {
