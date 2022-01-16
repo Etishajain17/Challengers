@@ -3,10 +3,10 @@ class Solution {
     {
         int max=0;
         List<Boolean> candy = new ArrayList<Boolean>();
-        for(int i=0;i<candies.length;i++)
+        for(int ele:candies)
         {
-            if(candies[i]>max)
-                max=candies[i];
+            if(ele>max)
+                max=ele;
         }
         for(int i=0;i<candies.length;i++)
         {
