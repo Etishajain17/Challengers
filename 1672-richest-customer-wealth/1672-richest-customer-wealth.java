@@ -2,7 +2,7 @@ class Solution {
     public int maximumWealth(int[][] accounts) 
     {
         int max=0;
-        for(var ele1:accounts)
+        for(int[] ele1:accounts)
         {
             int sum=0;
             for(int ele2:ele1)
