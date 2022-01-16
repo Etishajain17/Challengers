@@ -56,25 +56,20 @@ class Solution{
     public static void rearrange(int arr[], int n){
         
         // Your code here
+        if(n>1){
         int[] ar2=new int[n];
         int j=0;
-        if(n==1)
-        {
-             ar2[0]=arr[j];
-        }
-        else
-        {
-            for(int i=0;i<n;i=i+2)
+        for(int i=0;i<n;i=i+2)
             {
                 if(i+1<n)
                 ar2[i+1]=arr[j];
                 ar2[i]=arr[n-j-1];
                 j++;
             }
-        }    
         for(int i=0;i<n;i++)
         {
             arr[i]=ar2[i];
+        }
         }
     }
     
