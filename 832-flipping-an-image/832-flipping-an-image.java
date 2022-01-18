@@ -10,15 +10,23 @@ class Solution {
                 int temp=image[i][low];
                 image[i][low]=image[i][high];
                 image[i][high]=temp;
+                if(image[i][low]==0)
+                    image[i][low]=1;
+                else
+                    image[i][low]=0;
+                if(image[i][high]==0)
+                    image[i][high]=1;
+                else
+                    image[i][high]=0;
                 low++;
                 high--;
             }
-            for(int j=0;j<image[i].length;j++)
+            if(image[i].length%2!=0)
             {
-                if(image[i][j]==0)
-                    image[i][j]=1;
+                if(image[i][low]==0)
+                   image[i][low]=1;
                 else
-                    image[i][j]=0;
+                   image[i][low]=0;
             }
         }
         return image;
