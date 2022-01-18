@@ -8,12 +8,12 @@ class Solution {
             j=1;
         else
             j=2;
-        int s=0;
+        int count=0;
         for(int i=0;i<items.size();i++)
         {
             if(items.get(i).get(j).equals(ruleValue))
-                s++;
+                count++;
         }
-        return s;
+        return count;
     }
 }
