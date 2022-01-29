@@ -11,7 +11,7 @@ class Solution {
             }
         }
         if(j==-1)
-            j=arr.length;
+             j=arr.length;
         for(int i=0;i<j;i++)
         {
            for(int k=i+1;k<j;k++)
