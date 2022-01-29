@@ -1,25 +1,26 @@
 class Solution {
     public int[] twoSum(int[] arr, int target) 
     {
-        int j=-1;
-        for(int i=0;i<arr.length;i++)
-        {
-            if(arr[i]>target)
-            {
-                j=i+1;
-                break;
+        int low = 0, high = arr.length-1;
+        int[] out = new int[2];
+        
+        while(low <= high){
+            
+            if(arr[low]+arr[high] == target){
+                out[0] = low+1;
+                out[1] = high+1;
+                return out;
             }
+            
+            else if(arr[low] + arr[high] < target){
+                low++;
+            }
+            
+            else{
+                high--;
+            }    
         }
-        if(j==-1)
-            j=arr.length;
-        for(int i=0;i<j;i++)
-        {
-           for(int k=i+1;k<j;k++)
-           {
-               if(arr[i]+arr[k]==target)
-                   return (new int[]{i+1,k+1});
-           }
-        }
-        return (new int[]{0,0});
+        
+        return out;
     }
 }
