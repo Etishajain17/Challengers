@@ -13,7 +13,7 @@ class Solution {
             }
             
             else if(arr[low] + arr[high] < target){
-                low++;
+                low++ ;
             }
             
             else{
