@@ -26,7 +26,7 @@ class Main
             System.out.println(obj.search(arr, sizeOfArray, x));
         }
     }
-}// } Driver Code Ends
+}// }Driver Code Ends
 
 
 class Solution{
