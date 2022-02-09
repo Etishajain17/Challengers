@@ -25,6 +25,7 @@ class Solution {
         }
         if(head.val==val)
             head=head.next;
+        
         return head;
     }
 }
