@@ -9,7 +9,6 @@ class Solution
             num=num/10;
         }
         Arrays.sort(ar);
-        
         return ar[0]*10+ar[3]+ar[1]*10+ar[2];
     }
 }
