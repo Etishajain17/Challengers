@@ -12,7 +12,6 @@ class Solution {
                 ar[i]=ar[i].substring(0,l)+ar[i].charAt(h)+ar[i].substring(l+1,h)+ ar[i].charAt(l)+ar[i].substring(h+1);
             st=st+ar[i]+" ";
         }
-        
         return st.substring(0,st.length()-1);
     }
 }
