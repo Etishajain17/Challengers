@@ -12,9 +12,7 @@ class Solution {
                 h--;
             }
             if(l==words[i].length()/2)
-            {
                 return words[i];
-            }
         }
         return "";
     }
