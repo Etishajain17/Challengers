@@ -3,13 +3,9 @@ class Solution {
         int l=0,h=word.indexOf(ch);
         if(l<h)
         word=word.charAt(h)+word.substring(l+1,h)+word.charAt(l)+word.substring(h+1);
-        l++;
-        h--;
-        while(l<h)
+        while(++l<--h)
         {
             word=word.substring(0,l)+word.charAt(h)+word.substring(l+1,h)+word.charAt(l)+word.substring(h+1); 
-            l++;
-            h--;
         }
         return word;
     }
