@@ -1,14 +1,14 @@
 class Solution {
     public int searchInsert(int[] nums, int target) 
     {
-        
-        if(Arrays.binarySearch(nums,target)>-1)
+        int imp=Arrays.binarySearch(nums,target);
+        if(imp>-1)
         {
-            return Arrays.binarySearch(nums,target);
+            return imp;
         }
         else
         {
-            return Math.abs(Arrays.binarySearch(nums,target))-1;
+            return (imp*-1)-1;
         }
         
         //**Approach**
