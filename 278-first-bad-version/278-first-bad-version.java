@@ -6,21 +6,20 @@ public class Solution extends VersionControl
     public int firstBadVersion(int n) 
     {
     
-        int beg,last,mid;
-        beg=1;
-        last=n;
+        int start,end,mid;
+        start=1;
+        end=n;
         int pos=1;
-        while(beg<=last)
+        while(start<=end)
         {
-            mid= beg + (last-beg)/2;
-            boolean x=isBadVersion(mid);
-            if(x==true)
+            mid= start + (end-start)/2;
+            if(isBadVersion(mid)==true)
             {
                 pos=mid;
-                last=mid-1;
+                end=mid-1;
             }
             else
-                beg=mid+1;
+                start=mid+1;
         }
         return pos;
     }
