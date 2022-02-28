@@ -5,6 +5,7 @@ class Solution {
             return -1;
         return Arrays.binarySearch(nums,target);
         
+        
         //**Approach**
         // int first=0,last=nums.length-1;
         // while(first<=last)
