@@ -8,6 +8,7 @@ class Solution {
         reverseArrayByParts(0,nums.length-1,nums);
     }
     
+    //method to just reverse
     void reverseArrayByParts(int low,int high,int[] nums)
     {
         while(low<high)
