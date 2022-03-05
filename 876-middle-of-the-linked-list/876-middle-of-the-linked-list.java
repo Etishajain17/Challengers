@@ -19,9 +19,7 @@ class Solution {
             c++;
         }
         if(c==1)
-        {
             return head;
-        }
         c=c/2;
         int i=1;
         temp=head;
