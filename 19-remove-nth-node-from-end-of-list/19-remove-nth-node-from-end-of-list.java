@@ -12,21 +12,46 @@ class Solution
 {
     public ListNode removeNthFromEnd(ListNode head, int n) 
     {
-        int c=0;
-        ListNode temp1=head;
-        while(temp1!=null)
+        //Two Pointer Appoach { First Pointer is already n times ahead }
+        ListNode temp1 = head;
+        ListNode temp2 = head;
+        for(int i=0; i < n; i++)
+            temp1 =temp1.next;
+        
+        if(temp1 == null)
         {
-            temp1=temp1.next;
-             c++;
+            head = head.next;
+            return head;
         }
-        if(head.next==null || head==null)
-            return null;
-        else if(n==c)
-            return head.next;
-        ListNode temp=head;
-        for(int i=0;i<c-n-1;i++)
-            temp=temp.next;
-        temp.next=temp.next.next;
+        
+        while(temp1.next != null)
+        {
+            temp1 = temp1.next;
+            temp2 = temp2.next;
+        }
+        temp2.next = temp2.next.next;
+        
         return head;
+        
+        
+        //OTHER APPROACH
+        // int c=0;
+        // ListNode temp1=head;
+        // while(temp1!=null)
+        // {
+        //     temp1=temp1.next;
+        //      c++;
+        // }
+        
+        // if(head.next==null || head==null)
+        //     return null;
+        // else if(n==c)
+        //     return head.next;
+        
+        // ListNode temp=head;
+        // for(int i=0;i<c-n-1;i++)
+        //     temp=temp.next;
+        // temp.next=temp.next.next;
+        // return head;
     }
 }
