@@ -11,6 +11,6 @@ class Solution {
             else
                 high--; 
         }
-        return (new int[]{low+1,high+1});
+        return (new int[]{-1,-1});
     }
 }
