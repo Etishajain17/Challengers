@@ -24,6 +24,7 @@ class Solution {
         if(max<arr.get(i)+arr.get(n-i-1))
             max=arr.get(i)+arr.get(n-i-1);
     }
+        
     return max;
     }
 }
