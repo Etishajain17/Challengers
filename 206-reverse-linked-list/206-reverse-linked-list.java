@@ -18,7 +18,8 @@ class Solution {
             temp = temp2.next;
             temp2.next = prev;
             prev = temp2;
-            temp2 = temp;}
+            temp2 = temp;
+        }
         head=prev;
         return head;
     }
