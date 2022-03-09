@@ -24,8 +24,7 @@ class Solution
                 s=0;
             }
             else
-                s=s+temp.val;
-            
+                s=s+temp.val; 
             temp=temp.next;
         }
         return head.next;
