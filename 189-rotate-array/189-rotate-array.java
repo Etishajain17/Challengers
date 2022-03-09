@@ -1,8 +1,7 @@
 class Solution {
     public void rotate(int[] nums, int k) 
     {
-        if(k>nums.length)
-            k=k%nums.length;
+        k=k%nums.length;
         reverseArrayByParts(0,nums.length-k-1,nums);
         reverseArrayByParts(nums.length-k,nums.length-1,nums);
         reverseArrayByParts(0,nums.length-1,nums);
