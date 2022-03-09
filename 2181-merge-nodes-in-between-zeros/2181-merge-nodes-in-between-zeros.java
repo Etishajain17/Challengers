@@ -12,8 +12,6 @@ class Solution
 {
     public ListNode mergeNodes(ListNode head) 
     {
-        // if(head==null || head.next==null)
-        //     return null;
         int s=0;
         ListNode temp=head.next;
         ListNode temp2=head;
@@ -26,9 +24,8 @@ class Solution
                 s=0;
             }
             else
-            {
                 s=s+temp.val;
-            }
+            
             temp=temp.next;
         }
         return head.next;
