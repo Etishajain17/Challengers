@@ -22,7 +22,6 @@ class Solution {
             temp=temp.next;
         }
         k=k%c;
-        if(k==0)  return head;
         temp.next=head;
         for(int i=0;i<c-k;i++)
             temp=temp.next;
