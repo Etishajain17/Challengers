@@ -10,7 +10,6 @@ class Solution {
                 num-=1;
             st++;
         }
-            
         return st;
     }
 }
