@@ -5,6 +5,7 @@ class Solution {
         {
             x^=start+2*i;
         }
+        
         return x;
     }
 }
