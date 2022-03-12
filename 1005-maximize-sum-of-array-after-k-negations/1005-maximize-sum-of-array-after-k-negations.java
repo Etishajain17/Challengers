@@ -11,7 +11,6 @@ class Solution {
         {
             s=s+nums[i];
         }
-        
         return s;
     }
 }
