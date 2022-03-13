@@ -8,13 +8,9 @@ class Solution {
             if(stack.peek()==null)
                 stack.push(s.charAt(i));
             else if(stack.peek()!=s.charAt(i))
-            {
                 stack.push(s.charAt(i));
-            }
             else
-            {
                 stack.pop();
-            }
         }
         s="";
         while(stack.peek()!=null)
