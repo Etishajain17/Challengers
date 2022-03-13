@@ -25,6 +25,7 @@ class Solution {
     }
     public boolean isMatching(char a,char b)
     {
-        return((a=='(' && b==')') || (a=='{' && b=='}') || (a=='[' && b==']'));
+         return((a=='(' && b==')') || (a=='{' && b=='}') || (a=='[' && b==']'));
     }
+       
 }
