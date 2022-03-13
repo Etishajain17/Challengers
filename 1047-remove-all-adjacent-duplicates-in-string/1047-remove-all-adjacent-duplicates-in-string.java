@@ -18,6 +18,7 @@ class Solution {
             s=s+stack.peek();
             stack.pop();
         }
+        
         return s;
     }
 }
