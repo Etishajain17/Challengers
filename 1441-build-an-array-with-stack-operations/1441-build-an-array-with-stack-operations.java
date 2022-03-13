@@ -5,18 +5,12 @@ class Solution {
         int i=0,j=1;
         while(i<target.length && j!=n+1)
         {
+            l.add("Push");
             if(target[i]==j)
-            {
-                l.add("Push");
                 i++;
-                j++;
-            }
             else
-            {
-                l.add("Push");
                 l.add("Pop");
-                j++;
-            }
+            j++;
         }
         return l;
     }
