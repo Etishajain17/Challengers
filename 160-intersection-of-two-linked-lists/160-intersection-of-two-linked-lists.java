@@ -12,7 +12,6 @@
 public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         ListNode tempA=headA,tempB=headB;
-        
         while(tempA!=null)
         {
             tempB=headB;
@@ -27,7 +26,6 @@ public class Solution {
             }
             tempA=tempA.next;
         }
-        
         return null;
     }
 }
