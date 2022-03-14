@@ -16,6 +16,7 @@ class Solution {
             while(stack.isEmpty()==false && stack.peek()<=nums2[i])
                 stack.pop();
             int nextGreater=(stack.isEmpty())?(-1): (stack.peek());
+            stack.push(nums2[i]);
             for(int j=0;j<nums1.length;j++)
             {
                 if(nums2[i]==nums1[j])
@@ -24,10 +25,7 @@ class Solution {
                     break;
                 }
             }
-            
-            stack.push(nums2[i]);
         }
-        
         return nums1;
     }
 }
