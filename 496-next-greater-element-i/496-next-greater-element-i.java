@@ -24,8 +24,10 @@ class Solution {
                     break;
                 }
             }
+            
             stack.push(nums2[i]);
         }
+        
         return nums1;
     }
 }
