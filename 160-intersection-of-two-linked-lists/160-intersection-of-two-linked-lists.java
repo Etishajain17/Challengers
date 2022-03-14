@@ -36,6 +36,8 @@ public class Solution {
         
         return inter;
         
+        
+        
         //Naive Approach  O(nm) Time complexity and O(1) Space Complexity
 //         ListNode tempA=headA,tempB=headB;
 //         while(tempA!=null)
