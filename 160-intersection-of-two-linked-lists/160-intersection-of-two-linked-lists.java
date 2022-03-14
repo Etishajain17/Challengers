@@ -14,6 +14,7 @@ public class Solution {
         ListNode tempA=headA,tempB=headB;
         while(tempA!=null)
         {
+            
             tempB=headB;
             while(tempB!=null)
             {
@@ -24,6 +25,7 @@ public class Solution {
                 }
                 tempB=tempB.next;
             }
+            
             tempA=tempA.next;
         }
         return null;
