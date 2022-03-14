@@ -14,9 +14,7 @@ class Solution {
         for(int i=nums2.length-2;i>=0;i--)
         {
             while(stack.isEmpty()==false && stack.peek()<=nums2[i])
-            {
                 stack.pop();
-            }
             int nextGreater=(stack.isEmpty())?(-1): (stack.peek());
             for(int j=0;j<nums1.length;j++)
             {
