@@ -7,6 +7,6 @@ class Solution {
                c++;
             }
         }
-    return c;
+        return c;
     }
 }
