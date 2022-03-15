@@ -1,12 +1,12 @@
 class Solution {
     public int numJewelsInStones(String jewels, String stones) {
-     int result=0;
+     int count=0;
 
     for(int i=0;i<stones.length();i++)
     {
         if(jewels.indexOf(stones.charAt(i))!=-1) 
-            result++;
+            count++;
     }
-        return result;
+        return count;
     }
 }
