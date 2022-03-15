@@ -13,6 +13,7 @@ class Solution {
             }
             startChar++;
         }
+        
         return l;
     }
 }
