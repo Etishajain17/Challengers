@@ -13,9 +13,6 @@ class Solution
             }
         }
         str[Character.getNumericValue(s.charAt(i+1))-1]=s.substring(j,i+1);
-        s="";
-        for(int x=0;x<str.length-1;x++)
-            s=s+str[x]+" ";
-        return s+str[str.length-1];
+        return String.join(" ", str);
     }
 }
