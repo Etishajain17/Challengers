@@ -13,7 +13,6 @@ class Solution
             }
         }
         str[Character.getNumericValue(s.charAt(i+1))-1]=s.substring(j,i+1);
-        
         return String.join(" ", str);
     }
 }
