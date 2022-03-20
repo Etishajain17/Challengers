@@ -1,7 +1,5 @@
 class Solution {
     public String truncateSentence(String s, int k) {
-        if(k==s.split(" ").length)
-            return s;
         int k1=0;
         for(int i=0;i<s.length()-1;i++)
         {
