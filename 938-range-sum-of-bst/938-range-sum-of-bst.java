@@ -21,7 +21,6 @@ class Solution {
             return rangeSumBST(root.right,low,high);
         if(root.val>high)
             return rangeSumBST(root.left,low,high);
-        
         return rangeSumBST(root.left,low,high) + root.val + rangeSumBST(root.right,low,high);
     }
 }
