@@ -5,8 +5,7 @@ class Solution {
         {
             if(Character.isDigit(s.charAt(i)))
             {
-                char z=(char)(s.charAt(i-1) + Character.getNumericValue(s.charAt(i)));
-                s1.append(z);
+                s1.append((char)(s.charAt(i-1) + Character.getNumericValue(s.charAt(i))));
             }
             else
                 s1.append(s.charAt(i));
