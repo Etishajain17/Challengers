@@ -14,7 +14,6 @@ class Solution {
             low++;
             high--;
         }
-        
         return true;
     }
 }
