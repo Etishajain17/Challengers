@@ -23,9 +23,7 @@ class Solution {
             return 0;
         int x = 0;
         for(Node child:root.children)
-        {
             x = Math.max(x, maxDepth(child));
-        }
         return x+1;
     }
 }
