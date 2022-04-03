@@ -12,13 +12,11 @@ class Solution {
         }
         reverse(n, i + 1);
     }
-
     void swap(int[] n, int i, int j) {
         int t = n[i];
         n[i] = n[j];
         n[j] = t;
     }
-    
     void reverse(int[] n, int x) {
         int i = x, j = n.length - 1;
         while (i < j) {
