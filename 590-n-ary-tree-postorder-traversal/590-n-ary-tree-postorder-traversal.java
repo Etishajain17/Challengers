@@ -24,7 +24,6 @@ class Solution {
             return l;
         for(Node child:root.children)
             l=postorder(child);
-        
          l.add(root.val);
         return l;
     }
