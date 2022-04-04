@@ -20,6 +20,7 @@ class Solution {
     public TreeNode SortedArrayToBST(int[] nums,int i,int j) {
         if(i>j) return null;
         int mid=(i+j)/2;
+        
         TreeNode a=new TreeNode(nums[mid]);
         a.left=SortedArrayToBST(nums,i,mid-1);        
         a.right=SortedArrayToBST(nums,mid+1,j);
