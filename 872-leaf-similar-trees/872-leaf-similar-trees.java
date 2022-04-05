@@ -17,8 +17,7 @@ class Solution {
     public boolean leafSimilar(TreeNode root1, TreeNode root2) {
         ArrayList l1=new ArrayList();
         ArrayList l2=new ArrayList();
-        leafy(root1,l1);
-        leafy(root2,l2);
+        leafy(root1,l1);leafy(root2,l2);
         return l1.equals(l2);
     }
     public void leafy(TreeNode root,ArrayList l)
