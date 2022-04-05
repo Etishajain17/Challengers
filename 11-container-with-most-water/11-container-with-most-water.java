@@ -8,6 +8,7 @@ class Solution {
                 left++;
             else
                 right--;
+            
             max=Math.max(max,Math.min(height[left],height[right])*(right-left));
         }
         return max;
