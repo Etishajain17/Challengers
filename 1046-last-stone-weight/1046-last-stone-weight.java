@@ -12,6 +12,7 @@ class Solution {
             stones[stones.length-2]=0;
             Arrays.sort(stones);
         }
+        
         return stones[stones.length-1];
     }
 }
