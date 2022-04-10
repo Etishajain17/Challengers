@@ -18,8 +18,7 @@ class Solution {
             else
                 s.push(Integer.valueOf(op));
         }
-        for(int x: s)
-        {
+        for(int x: s){
             sum+=x;
         }
         return sum;
