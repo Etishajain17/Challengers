@@ -21,6 +21,7 @@ class Solution {
         for(int x: s){
             sum+=x;
         }
+        
         return sum;
     }
 }
