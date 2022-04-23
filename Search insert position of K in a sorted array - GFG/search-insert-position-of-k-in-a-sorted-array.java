@@ -35,9 +35,7 @@ class Solution
         for(int i=0;i<N;i++){
             if(arr[i]==k)
                 return i;
-        }
-        for(int i=0;i<N;i++){
-            if(k<arr[i])
+            else if(k<arr[i])
                  return i;
         }
         return N;
