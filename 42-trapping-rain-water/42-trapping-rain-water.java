@@ -4,24 +4,19 @@ class Solution
     {
         int[] r=new int[height.length];
         int[] l=new int[height.length];
-        int max=0,s=0;
-        for(int i=0;i<height.length;i++)
+        int max1=0,max2=0,s=0;
+        for(int i=0,j=height.length-1;i<height.length && j>=0;i++,j--)
         {
-            l[i]=max;
-            max=Math.max(max,height[i]);
-        }
-        max=0;
-        for(int i=height.length-1;i>=0;i--)
-        {
-            r[i]=max;
-            max=Math.max(max,height[i]);
+            l[i]=max1;
+            max1=Math.max(max1,height[i]);
+            r[j]=max2;
+            max2=Math.max(max2,height[j]);
         }
         for(int i=0;i<height.length;i++)
         {
             if(height[i]<Math.min(l[i],r[i]))
                 s=s+Math.min(l[i],r[i])-height[i];
         }
-        
         return s;
     }
 }
