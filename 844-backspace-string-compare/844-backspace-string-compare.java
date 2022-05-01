@@ -12,6 +12,7 @@ class Solution {
             else if(!res.empty())
                 res.pop();
         }
+        
         return String.valueOf(res);
     }
 }
