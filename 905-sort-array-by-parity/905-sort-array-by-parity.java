@@ -12,6 +12,7 @@ class Solution {
             if(nums[low]%2==0) low++;
             if(nums[high]%2==1) high--;
         }
+        
         return nums;
     }
 }
