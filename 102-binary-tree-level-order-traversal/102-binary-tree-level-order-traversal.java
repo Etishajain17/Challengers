@@ -29,7 +29,6 @@ class Solution {
          int x = 0;
          List<Integer> inner = new ArrayList<>();
          int n = q.size();
-         System.out.println(n);
          while(x<n)
          {
             TreeNode temp = q.peek();
