@@ -28,6 +28,7 @@ class Solution {
             {
                 l.add(s.substring(0,s.length()-2));
             }
+            
             bt(root.left,s);
             bt(root.right,s);
         }
