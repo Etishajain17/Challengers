@@ -39,9 +39,8 @@ class Solution {
                 q.add(temp.right);
             x++;
         }
-        outer.add(inner);
+        outer.add(0,inner);
     }
-    Collections.reverse(outer);
     return outer;
     }
 }
