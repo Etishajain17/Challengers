@@ -18,7 +18,7 @@ class Solution {
         if(root == null) 
 			 return true;
 		 Queue<TreeNode> q = new LinkedList<>();
-		 q.offer(root.left); q.offer(root.right);
+		 q.add(root.left); q.add(root.right);
 		 while(!q.isEmpty()) {
 			TreeNode a = q.poll();
 			TreeNode b = q.poll();
@@ -28,10 +28,10 @@ class Solution {
 				return false;
 			if(a.val != b.val) 
 				return false;
-			q.offer(a.left);
-			q.offer(b.right);
-			q.offer(a.right);
-			q.offer(b.left); 
+			q.add(a.left);
+			q.add(b.right);
+			q.add(a.right);
+			q.add(b.left); 
          }
         return true;
     }
