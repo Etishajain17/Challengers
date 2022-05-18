@@ -22,7 +22,6 @@ class Solution {
         int right=minDepth(root.right);
         if (left == 0 || right == 0)
 			return 1 + left + right;
-        
         return Math.min(left,right)+1;
     }
 }
