@@ -9,9 +9,8 @@
  */
 
 class Solution {
-    TreeNode ans,target;
+    TreeNode ans;
     public final TreeNode getTargetCopy(final TreeNode original, final TreeNode cloned, final TreeNode target) {
-        this.target=target;
         preorder(original,cloned,target);
         return ans;
     }
