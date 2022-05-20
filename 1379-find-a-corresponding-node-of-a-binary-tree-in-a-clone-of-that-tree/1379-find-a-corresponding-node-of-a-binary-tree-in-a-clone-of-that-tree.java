@@ -19,8 +19,10 @@ class Solution {
     {
         if(n1==null || n2==null)
             return;
-        if(n1==c && c.val==n2.val)
+        if(n1==c && c.val==n2.val){
             ans=n2;
+            return;
+        }
         preorder(n1.left,n2.left,c);
         preorder(n1.right,n2.right,c);
     }
