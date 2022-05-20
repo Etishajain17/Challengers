@@ -22,12 +22,13 @@ class Solution {
        Queue<TreeNode> queue=new LinkedList<>();
        queue.add(root);
         int s=0;
+        TreeNode temp=root;
        while(!queue.isEmpty())
        {
            int x=0,n=queue.size();
            while(x<n)
            {
-               TreeNode temp=queue.peek();
+               temp=queue.peek();
                queue.remove();
                if(temp.left!=null){
                    queue.add(temp.left);
@@ -37,7 +38,6 @@ class Solution {
                        if(temp.left.right!=null)
                            s+=temp.left.right.val;
                    }
-                   
                }
                if(temp.right!=null){
                    queue.add(temp.right);
