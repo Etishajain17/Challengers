@@ -28,8 +28,6 @@ class Solution {
             ans=false;
             return 0;
         }
-    
-        
         return Math.max(lh,rh)+1;
     }
 }
