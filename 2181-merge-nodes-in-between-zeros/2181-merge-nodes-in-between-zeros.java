@@ -12,21 +12,19 @@ class Solution
 {
     public ListNode mergeNodes(ListNode head) 
     {
-        int s=0;
-        ListNode temp=head.next;
-        ListNode temp2=head;
-        while(temp!=null)
+        ListNode temp=head;
+        ListNode temp2=head.next;
+        while(temp2.next!=null)
         {
-            if(temp.val==0)
-            {
-                temp2.next=new ListNode(s);
-                temp2=temp2.next;
-                s=0;
+            if(temp2.val!=0)
+                temp.val+=temp2.val;
+            else{
+                temp.next=temp2;
+                temp=temp.next;
             }
-            else
-                s=s+temp.val; 
-            temp=temp.next;
+            temp2=temp2.next;      
         }
-        return head.next;
+        temp.next=null;
+        return head;
     }
 }
