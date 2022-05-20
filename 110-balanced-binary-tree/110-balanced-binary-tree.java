@@ -24,8 +24,11 @@ class Solution {
         if(root==null) return 0;
         int lh=check(root.left);
         int rh=check(root.right);
-        if(Math.abs(lh-rh)>1)
+        if(Math.abs(lh-rh)>1){
             ans=false;
+            return 0;
+        }
+    
         
         return Math.max(lh,rh)+1;
     }
