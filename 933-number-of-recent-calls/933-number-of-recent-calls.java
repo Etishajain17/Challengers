@@ -1,18 +1,14 @@
 class RecentCounter {
-    ArrayList<Integer> arr;
+    LinkedList<Integer> arr;
     public RecentCounter() {
-        arr=new ArrayList<>();
+        arr=new LinkedList<>();
     }
     
     public int ping(int t) {
-        arr.add(t);
-        int c=0;
-        for(Integer i:arr)
-        {
-            if(i<t-3000 || i>t)
-                c++;
-        }
-        return arr.size()-c;
+        arr.addLast(t);
+        while(arr.getFirst()<t-3000)
+            arr.removeFirst();
+        return arr.size();
     }
 }
 
