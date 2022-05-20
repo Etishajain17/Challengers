@@ -23,8 +23,10 @@ class Solution {
     {
         if(root!=null)
         {
-          if(root.left==null && root.right==null && sum==s+root.val)
-            ans=true;       
+          if(root.left==null && root.right==null && sum==s+root.val){
+            ans=true; 
+            return;
+          }
           inorder(root.left,sum,s+root.val);
           inorder(root.right,sum,s+root.val);
         }  
