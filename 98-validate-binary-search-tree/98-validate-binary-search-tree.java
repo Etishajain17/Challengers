@@ -22,13 +22,3 @@ class Solution {
         return (root.val>min && root.val<max && isBST(root.left,min,root.val) && isBST(root.right,root.val,max));
     }
 }
-// class Solution {
-//     int prev=Integer.MIN_VALUE;
-//     public boolean isValidBST(TreeNode root) {
-//         if(root == null) return true;
-//         if(isValidBST(  root.left)==false) return false;
-//         if(root.val<=prev) return false;
-//         prev=root.val;
-//         return isValidBST(root.right);
-//     }
-// }
