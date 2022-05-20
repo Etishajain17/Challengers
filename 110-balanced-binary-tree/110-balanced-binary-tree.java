@@ -26,6 +26,7 @@ class Solution {
         int rh=check(root.right);
         if(Math.abs(lh-rh)>1)
             ans=false;
+        
         return Math.max(lh,rh)+1;
     }
 }
