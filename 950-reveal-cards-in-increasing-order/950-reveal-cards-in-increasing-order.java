@@ -13,10 +13,8 @@ class Solution {
                 queue.add(deck[i]);
         }
         int i=deck.length;
-        while(i-->0){
+        while(i-->0)
             deck[i]=queue.remove();
-            // i--;
-        }
         return deck;
     }
 }
