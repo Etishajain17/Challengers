@@ -2,7 +2,7 @@ class Solution {
     public int[] deckRevealedIncreasing(int[] deck) {
         Queue<Integer> queue=new LinkedList<>();
         Arrays.sort(deck);
-        for(int i=deck.length-1;i>=0;i--)
+        for(int i=deck.length-1;i>-1;i--)
         {
             if(!queue.isEmpty())
             {
