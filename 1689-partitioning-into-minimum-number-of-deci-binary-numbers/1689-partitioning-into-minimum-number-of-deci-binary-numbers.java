@@ -5,8 +5,6 @@ class Solution {
        {
            if(max<Character.getNumericValue(n.charAt(i)))
                max=Character.getNumericValue(n.charAt(i));
-           if(max==9)
-               return max;
        }
        return max;
     }
