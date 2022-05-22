@@ -19,8 +19,8 @@ class Solution {
         avcn(root);
         count(root,sum/cn);
         return ans;
-        
     }
+    
     public void count(TreeNode root,int x)
     {
         if(root!=null)
