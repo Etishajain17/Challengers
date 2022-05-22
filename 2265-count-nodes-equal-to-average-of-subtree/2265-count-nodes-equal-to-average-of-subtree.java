@@ -37,8 +37,11 @@ class Solution {
             avcn(root.right);
             count(root.right,sum/cn);
             }
+            return;
         }
     }
+    
+    
     public void avcn(TreeNode root)
     {
         if(root!=null)
@@ -47,6 +50,7 @@ class Solution {
             cn+=1;
             avcn(root.left);
             avcn(root.right);
+            return;
         }
     }
 }
