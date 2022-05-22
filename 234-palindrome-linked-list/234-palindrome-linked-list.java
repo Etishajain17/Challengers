@@ -18,6 +18,7 @@ class Solution {
             slow=slow.next;
             fast=fast.next.next;
         }
+        
         ListNode prev=null;
         while(slow!=null)
         {
@@ -26,6 +27,7 @@ class Solution {
             prev=slow;
             slow=temp;
         }
+        
         ListNode left=head,right=prev;
         while(right!=null)
         {
