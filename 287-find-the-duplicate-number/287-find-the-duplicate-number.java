@@ -8,6 +8,7 @@ class Solution {
             else
                 return nums[i];
         }
+        
         return nums[nums.length-1];
     }
 }
