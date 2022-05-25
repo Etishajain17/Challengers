@@ -6,9 +6,9 @@ class Solution {
                 nums1[i]=nums2[i];
             return;
         }
-        else if(n==0){
+        else if(n==0)
             return;
-        }
+        
         int i=0,j=0,k=0;
         int[] ar=new int[m+n];
         while(i<m && j<n)
@@ -22,6 +22,7 @@ class Solution {
             ar[k++]=nums1[i++];
         while(j<n)
             ar[k++]=nums2[j++];
+        
         for(int a=0;a<m+n;a++)
             nums1[a]=ar[a];
         return;
