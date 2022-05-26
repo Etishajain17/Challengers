@@ -5,14 +5,11 @@ class Solution {
             hs.add(num);
             
         int ans=0;
-        for(int num:hs)
-        {
-            if(!hs.contains(num-1))
-            {
+        for(int num:hs){
+            if(!hs.contains(num-1)){
                 int cu=num;
                 int cs=1;
-                while(hs.contains(cu+1))
-                {
+                while(hs.contains(cu+1)){
                     cu+=1;
                     cs+=1;
                 }
