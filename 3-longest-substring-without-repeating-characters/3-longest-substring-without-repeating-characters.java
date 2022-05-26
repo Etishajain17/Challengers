@@ -16,10 +16,6 @@ class Solution {
                    ans=hs.size();
                 hs.clear();
             }
-            else{
-               hs.clear();
-               hs.add(s.charAt(i));
-            }
         }
         return ans;
     }
