@@ -19,6 +19,7 @@ class Solution {
           count2--;
          }
       }
+        
     ArrayList<Integer> ans = new ArrayList<Integer>();
     count1 = 0;
     count2 = 0;
