@@ -22,8 +22,10 @@ public class Solution {
         ListNode inter = null;
         while (tempB != null && inter == null) 
         {
-            if (tempB.val < 0)
+            if (tempB.val < 0){
                 inter = tempB;
+                break;
+            }
 
             tempB = tempB.next;
         }
