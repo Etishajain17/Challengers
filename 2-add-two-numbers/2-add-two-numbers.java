@@ -13,6 +13,7 @@ class Solution{
         ListNode head=new ListNode(0);
         ListNode a=l1,b=l2,curr=head;
         int c=0;
+        
         while(a!=null || b!=null){
             int x=(a!=null)?a.val:0;
             int y=(b!=null)?b.val:0;
@@ -25,6 +26,7 @@ class Solution{
         }
         if(c>0)
            curr.next=new ListNode(c);
+        
         return head.next;
     }
 }
