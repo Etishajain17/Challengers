@@ -25,7 +25,6 @@ class Solution{
         }
         if(c>0)
            curr.next=new ListNode(c);
-        
         return head.next;
     }
 }
