@@ -5,7 +5,7 @@ class Solution {
             if(nums[i]==1)
                 c++;
             else{
-                res=Math.max(c,res);
+                res=(c>res)?c:res;
                 c=0;
             }
         }
