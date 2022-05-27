@@ -17,13 +17,6 @@ class Solution {
 		    }
 		    left++;
 	    }
-	    // if (!temp.equals(""))
-	    // {
-	    // if (!ans.equals(""))
-	    // ans = temp + " " + ans;
-	    // else
-	    // ans = temp;
-	    // }
         return ans.trim();
     }
 }
