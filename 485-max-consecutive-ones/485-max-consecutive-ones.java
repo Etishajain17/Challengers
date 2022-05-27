@@ -5,10 +5,10 @@ class Solution {
             if(nums[i]==1)
                 c++;
             else{
-                res=(c>res)?c:res;
+                res=Math.max(c,res);
                 c=0;
             }
-        } 
+        }
         return (c>res)?c:res;
     }
 }
