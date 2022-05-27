@@ -40,7 +40,6 @@ class GfG
             if(sum==0)
                 max=i+1;
             Integer prev=hs.get(sum);
-            
             if(prev!=null)
                 max=Math.max(max,i-prev);
             else
