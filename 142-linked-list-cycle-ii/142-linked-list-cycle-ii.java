@@ -16,7 +16,6 @@ public class Solution {
             slow=slow.next;
             fast=fast.next.next;
             if(fast==slow){
-                // return (c==2)?slow.next:slow;
                 slow=head;
                 while(slow != fast){
                     slow = slow.next;
