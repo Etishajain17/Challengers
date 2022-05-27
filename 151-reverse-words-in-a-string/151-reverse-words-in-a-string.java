@@ -17,7 +17,6 @@ class Solution {
 		    }
 		    left++;
 	    }
-        
         return ans.trim();
     }
 }
