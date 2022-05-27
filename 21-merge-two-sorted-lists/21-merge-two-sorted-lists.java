@@ -39,5 +39,6 @@ class Solution {
         if(list2.val<=list1.val)
             return list2;
         return list1;
+        
     }
 }
