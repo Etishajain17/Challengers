@@ -26,7 +26,6 @@ public class Solution {
                 inter = tempB;
                 break;
             }
-
             tempB = tempB.next;
         }
         tempA = headA;
@@ -35,7 +34,6 @@ public class Solution {
              tempA.val = -tempA.val;
             tempA = tempA.next;
         }
-        
         return inter;
         
         
