@@ -8,8 +8,7 @@ class Solution {
                 res=(c>res)?c:res;
                 c=0;
             }
-        }
-        
+        } 
         return (c>res)?c:res;
     }
 }
