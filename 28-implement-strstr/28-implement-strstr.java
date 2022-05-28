@@ -12,13 +12,10 @@ class Solution {
                 }
                 if(k==needle.length())
                     return j;
-                else{
-                    i=j;
-                    k=0;
-                }
+                i=j;
+                k=0;
             }
         }
-        
         return -1;
     }
 }
