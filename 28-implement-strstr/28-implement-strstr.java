@@ -4,16 +4,13 @@ class Solution {
             return 0;
         for(int i=0;i<=haystack.length()-needle.length();i++){
             if(haystack.charAt(i)==needle.charAt(0)){
-                int j=i,k=0;
-                while(i<haystack.length() && k<needle.length()
-                     && haystack.charAt(i)==needle.charAt(k)){
-                    i++;
-                    k++;
+                int j=0;
+                while((i+j)<haystack.length() && j<needle.length()
+                     && haystack.charAt(i+j)==needle.charAt(j)){
+                    j++;
                 }
-                if(k==needle.length())
-                    return j;
-                i=j;
-                k=0;
+                if(j==needle.length())
+                    return i;
             }
         }
         
