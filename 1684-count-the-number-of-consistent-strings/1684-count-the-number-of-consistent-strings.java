@@ -1,23 +1,22 @@
 class Solution {
     public int countConsistentStrings(String allowed, String[] words) {
-        int [] allowSet=new int[128];
-        int count =0;
-        for(int i=0;i<allowed.length();i++){
-            allowSet[allowed.charAt(i)]++;
+        int cnt = 0;
+        int[] mark = new int[26];
+        for(int i = 0; i < allowed.length(); i++){
+            mark[allowed.charAt(i) - 'a'] = 1;
         }
         
-        for(String word:words){
-            boolean isAllowed=true;
-            for(int i=0; i<word.length();i++){
-                if(allowSet[word.charAt(i)]==0){
-                    isAllowed=false;
-                    break;
-                }
-            }
-            if(isAllowed){
-                count++;
-            }
+        for(String word : words){
+            if(ok(word, mark)) cnt++;
         }
-        return count;
+        
+        return cnt;
+    }
+    
+    private boolean ok(String word, int[] mark){
+        for(int i = 0; i < word.length(); i++){
+            if(mark[word.charAt(i) - 'a'] == 0) return false;
+        }
+        return true;
     }
 }
