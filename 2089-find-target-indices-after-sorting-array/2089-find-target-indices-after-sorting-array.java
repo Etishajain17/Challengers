@@ -10,7 +10,6 @@ class Solution {
         }
         for(int i=0; i<count; i++)
             arr.add(pos+i);
-        
         return arr;
     }
 }
