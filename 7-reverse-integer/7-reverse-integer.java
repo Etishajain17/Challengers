@@ -4,7 +4,7 @@ class Solution {
         while(x!=0){
             ans=ans*10+x%10;
             x/=10;
-        } 
-    return ans>Integer.MAX_VALUE|| ans<Integer.MIN_VALUE ? 0: (int) ans;
+        }
+        return ans>Integer.MAX_VALUE|| ans<Integer.MIN_VALUE ? 0: (int) ans;
     }
 }
