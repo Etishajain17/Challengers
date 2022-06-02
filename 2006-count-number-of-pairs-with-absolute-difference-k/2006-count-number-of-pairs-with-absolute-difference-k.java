@@ -6,7 +6,6 @@ class Solution {
             hm.put(i,hm.getOrDefault(i,0)+1);
             c+=hm.getOrDefault(i-k,0)+hm.getOrDefault(i+k,0);
         }
-        
         return c; 
     }
 }
