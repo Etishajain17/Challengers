@@ -6,6 +6,7 @@ class Solution {
                 ans[j][i]=matrix[i][j];
             }
         }
+        
         return ans;
     }
 }
