@@ -1,2 +1,2 @@
 # Challenger
-Collection of LeetCode and GFG questions to ace the coding interview! - Created using [LeetHub]
+Collection of LeetCode and GFG questions to ace the coding interview!
