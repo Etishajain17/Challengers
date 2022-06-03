@@ -9,6 +9,7 @@ class NumMatrix {
             for(int j=col1;j<=col2;j++)
                 sum+=arr[i][j];
         }
+        
         return sum;
     }
 }
