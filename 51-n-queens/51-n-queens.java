@@ -10,6 +10,7 @@ class Solution {
         backtrack(emptyBoard, 0, 0, 0, 0);
         return res;
     }
+    
     private void backtrack(char[][] board, int row, int cols, int diags, int antiDiags) {
         // if we've successfuly placed a Queen at all rows, we have a valid board state
         if (row == N) {
