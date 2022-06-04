@@ -17,6 +17,7 @@ class Solution {
             res.add(toBoard(board));
             return;
         }
+        
         for (int col=0; col<N; col++) {
             int currDiag = row-col+N;
             int currAntiDiag = row+col;
