@@ -1,12 +1,17 @@
 class Solution {
     public int minPartitions(String n) {
-       int max=0;
-       for(int i=0;i<n.length();i++)
-       {
-           if(max<Character.getNumericValue(n.charAt(i)))
-               max=Character.getNumericValue(n.charAt(i));
-       }
+       int res = 0;
+        for(int i=9; i>=1; i--) {
+            
+            String ch = String.valueOf(i);
+            
+            if( n.contains(ch) ) {
+                res = i;
+                break;
+            }
+                
+        }
         
-       return max;
+        return res;
     }
 }
