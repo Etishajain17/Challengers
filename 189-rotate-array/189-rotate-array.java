@@ -1,22 +1,18 @@
 class Solution {
     public void rotate(int[] nums, int k) 
     {
-        k=k%nums.length;
-        reverseArrayByParts(0,nums.length-k-1,nums);
-        reverseArrayByParts(nums.length-k,nums.length-1,nums);
-        reverseArrayByParts(0,nums.length-1,nums);
+       k=k%nums.length;
+       reverse(nums,0,nums.length-k-1);
+       reverse(nums,nums.length-k,nums.length-1);
+       reverse(nums,0,nums.length-1);
     }
-    
-    //method to just reverse
-    void reverseArrayByParts(int low,int high,int[] nums)
-    {
-        while(low<high)
-        {
+    public static void reverse(int[] nums,int low,int high){
+        while(low<high){
             int temp=nums[low];
             nums[low]=nums[high];
             nums[high]=temp;
             low++;
             high--;
         }
-    } 
+    }
 }
