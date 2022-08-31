@@ -4,7 +4,7 @@ class Solution
     {
         int[] r=new int[height.length];
         int[] l=new int[height.length];
-        int max1=0,max2=0,s=0;
+        int max1=height[0],max2=height[height.length-1],s=0;
         for(int i=0,j=height.length-1;i<height.length && j>=0;i++,j--)
         {
             l[i]=max1;
@@ -14,6 +14,7 @@ class Solution
         }
         for(int i=0;i<height.length;i++)
         {
+            System.out.println(l[i]+" "+r[i]);
             if(height[i]<Math.min(l[i],r[i]))
                 s=s+Math.min(l[i],r[i])-height[i];
         }
