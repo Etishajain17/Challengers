@@ -1,23 +1,21 @@
 class Solution 
 {
-    public int trap(int[] height) 
+    public int trap(int[] arr) 
     {
-        int[] r=new int[height.length];
-        int[] l=new int[height.length];
-        int max1=height[0],max2=height[height.length-1],s=0;
-        for(int i=0,j=height.length-1;i<height.length && j>=0;i++,j--)
-        {
-            l[i]=max1;
-            max1=Math.max(max1,height[i]);
-            r[j]=max2;
-            max2=Math.max(max2,height[j]);
+        int[] left=new int[arr.length];
+        left[0]=arr[0];
+        for(int i=1;i<left.length;i++){
+            left[i]=Math.max(left[i-1],arr[i]);
         }
-        for(int i=0;i<height.length;i++)
-        {
-            System.out.println(l[i]+" "+r[i]);
-            if(height[i]<Math.min(l[i],r[i]))
-                s=s+Math.min(l[i],r[i])-height[i];
+        int[] right=new int[arr.length];
+        right[arr.length-1]=arr[arr.length-1];
+        for (int i = arr.length-2; i >=0 ; i--) {
+            right[i]=Math.max(right[i+1],arr[i]);
         }
-        return s;
+        int sum=0;
+        for (int i = 0; i < arr.length; i++) {
+            sum+=Math.min(left[i],right[i])-arr[i];
+        }
+        return sum;
     }
 }
