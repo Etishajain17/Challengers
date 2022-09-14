@@ -15,7 +15,7 @@ class Solution {
     public static int productLessThanK(int[] arr,int k){
         int c=0,si=0,ei=0,product=1;
         while(ei<arr.length){
-            //window grow
+            //window grow kro
             product*=arr[ei];
             //window shrink kro
             while(product>=k && si<=ei) {
