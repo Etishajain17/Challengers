@@ -10,6 +10,7 @@ class Solution {
             list.add(ans);
             return;
         }
+        
         if(open<n)
             generate(ans+"(",open+1,close,n,list);
         if(close<open)
