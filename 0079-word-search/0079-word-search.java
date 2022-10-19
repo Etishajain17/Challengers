@@ -15,19 +15,17 @@ class Solution {
         if(idx==s.length()){
             return true;
         }
-        if (cr < 0 || cc < 0 || cr >= arr.length || cc >= arr[0].length){
+        if (cr < 0 || cc < 0 || cr >= arr.length || cc >= arr[0].length || arr[cr][cc]!=s.charAt(idx)){
             return false;
         }
+        arr[cr][cc]='*';
+        int[] r={-1,1,0,0};
+        int[] c={0,0,-1,1};
         boolean possible=false;
-        if(arr[cr][cc]==s.charAt(idx) || arr[cr][cc]==s.charAt(idx) || arr[cr][cc]==s.charAt(idx) || arr[cr][cc]==s.charAt(idx)){
-            char t=arr[cr][cc];
-            arr[cr][cc]='0';
-            possible=possible || WordSearch(arr,s,idx+1,cr,cc-1);
-            possible=possible || WordSearch(arr,s,idx+1,cr,cc+1);
-            possible=possible || WordSearch(arr,s,idx+1,cr-1,cc);
-            possible=possible || WordSearch(arr,s,idx+1,cr+1,cc);
-            arr[cr][cc]=t;
+        for (int i = 0; i < c.length; i++) {
+            possible=possible || WordSearch(arr,s,idx+1,cr+r[i],cc+c[i]);
         }
+        arr[cr][cc]=s.charAt(idx);
         return possible;
     }
 }
